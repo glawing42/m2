@@ -1,37 +1,75 @@
 import React, { Component } from 'react';
+import "./Home.css";
 
 class Home extends Component {
-  login() {
-    this.props.auth.login();
-  }
+
   render() {
-    const { isAuthenticated } = this.props.auth;
+    
     return (
-      <div className="container">
-        {
-          isAuthenticated() && (
-              <h4>
-                You are logged in!
-              </h4>
-            )
-        }
-        {
-          !isAuthenticated() && (
-              <h4>
-                You are not logged in! Please{' '}
-                <a
-                  style={{ cursor: 'pointer' }}
-                  onClick={this.login.bind(this)}
-                >
-                  Log In
-                </a>
-                {' '}to continue.
-              </h4>
-            )
-        }
+  
+
+<div className="container">
+<br />
+<div id="myCarousel" className="carousel slide" data-ride="carousel">
+
+  <ol className="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+
+  <div className="carousel-inner" role="listbox">
+
+    <div className="item active">
+      <img src="img_chania.jpg" alt="Chania" width="460" height="345" />
+      <div className="carousel-caption">
+        <h3>Chania</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
       </div>
-    );
-  }
+    </div>
+
+    <div className="item">
+      <img src="img_chania2.jpg" alt="Chania" width="460" height="345" />
+      <div className="carousel-caption">
+        <h3>Chania</h3>
+        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+      </div>
+    </div>
+  
+    <div className="item">
+      <img src="img_flower.jpg" alt="Flower" width="460" height="345" />
+      <div className="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beautiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+    <div className="item">
+      <img src="img_flower2.jpg" alt="Flower" width="460" height="345" />
+      <div className="carousel-caption">
+        <h3>Flowers</h3>
+        <p>Beautiful flowers in Kolymbari, Crete.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
+  </a>
+  <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+);
 }
+}
+
 
 export default Home;
