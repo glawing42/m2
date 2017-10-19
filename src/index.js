@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+import 'react-social-icons';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { makeMainRoutes } from './routes';
