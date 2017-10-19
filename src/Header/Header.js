@@ -4,8 +4,6 @@ import {
   Button,
   NavItem,
   Nav,
-  NavDropdown,
-  MenuItem
 } from 'react-bootstrap';
 
 import '../App.css';

@@ -18,7 +18,7 @@ class Home extends Component {
             <a
               href="https://stickerapp.com/custom-stickers/popular/"
               className="col-xs-6 col-sm-6 col-md-4">
-              <img src={require('../images/wraps.jpg')}/>
+              <img src={require('../images/wraps.jpg')} alt="wraps"/>
 
               <h3 className="Wraps">Wraps</h3>
             </a>
@@ -26,7 +26,7 @@ class Home extends Component {
             <a
               href="https://stickerapp.com/custom-stickers/popular/"
               className="col-xs-6 col-sm-6 col-md-4">
-              <img src={require('../images/decals.jpg')}/>
+              <img src={require('../images/decals.jpg')} alt="Decals"/>
 
               <h3 className="Decals">Decals</h3>
             </a>
@@ -34,7 +34,7 @@ class Home extends Component {
             <a
               href="https://stickerapp.com/materials/"
               className="col-xs-6 col-sm-6 col-md-4">
-              <img src={require('../images/custom.jpg')}/>
+              <img src={require('../images/custom.jpg')} alt="Custom Desgin"/>
 
               <h3 className="Custom-Design">Custom Design</h3>
             </a>
