@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.0.14",
     "react-social-icons": "^2.7.0"
   },
   "dependencies": {
