@@ -1,12 +1,7 @@
 import React, {Component} from 'react';
-import {
-  Navbar,
-  Button,
-  NavItem,
-  Nav,
-} from 'react-bootstrap';
+import {Navbar, Button, NavItem, Nav} from 'react-bootstrap';
 
-import '../App.css';
+import './Header.css';
 
 class Header extends Component {
   goTo(route) {
@@ -42,10 +37,13 @@ class Header extends Component {
             </Navbar.Brand>
             <Navbar.Toggle/>
           </Navbar.Header>
-          <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="#">Gallery</NavItem>
-              <NavItem eventKey={2} href="#">Order</NavItem>
+            <Navbar.Brand>
+              <a href="/library">Gallery</a>
+            </Navbar.Brand>
+            <Navbar.Brand>
+              <a href="/order">Order</a>
+            </Navbar.Brand>
             </Nav>
             <Nav pullRight>
               <NavItem eventKey={2} href="#">
@@ -73,7 +71,6 @@ class Header extends Component {
 }
               </NavItem>
             </Nav>
-          </Navbar.Collapse>
         </Navbar>
       </div>
 
