@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import {Route, Router} from 'react-router-dom';
 import App from './App';
 import Home from './Home/Home';
 import Header from './Header/Header';
@@ -18,18 +18,20 @@ const handleAuthentication = (nextState, replace) => {
 
 export const makeMainRoutes = () => {
   return (
-      <Router history={history} component={App}>
-        <div>
-          <Route path="/" render={(props) => <Header auth={auth} {...props} />} />
-          <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
-          <Route path="/callback" render={(props) => {
-            handleAuthentication(props);
-            return <Callback {...props} /> 
-          }}/>
-          <br />
-          <Footer />
-        </div>
-        
-      </Router>
+    <Router history={history} component={App}>
+      <div>
+        <Route path="/" render={(props) => <Header auth={auth} {...props}/>}/>
+        <Route path="/" render={(props) => <Home auth={auth} {...props}/>}/>
+        <Route
+          path="/callback"
+          render={(props) => {
+          handleAuthentication(props);
+          return <Callback {...props}/>
+        }}/>
+        <br/>
+        <Footer/>
+      </div>
+
+    </Router>
   );
 }

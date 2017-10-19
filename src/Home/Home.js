@@ -1,75 +1,50 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import "./Home.css";
 
 class Home extends Component {
 
   render() {
-    
+
     return (
-  
 
-<div className="container">
-<br />
-<div id="myCarousel" className="carousel slide" data-ride="carousel">
+      <div className="bg">
+        <div className="jumbotron">
+          <div className="row"></div>
+        </div>
+        <div className="col-lg-12">
+          <div
+            className="row products products-padding products-round margin-top-sm margin-bottom-sm">
 
-  <ol className="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
+            <a
+              href="https://stickerapp.com/custom-stickers/popular/"
+              className="col-xs-6 col-sm-6 col-md-4">
+              <img src={require('../images/wraps.jpg')}/>
 
+              <h3 className="Wraps">Wraps</h3>
+            </a>
 
-  <div className="carousel-inner" role="listbox">
+            <a
+              href="https://stickerapp.com/custom-stickers/popular/"
+              className="col-xs-6 col-sm-6 col-md-4">
+              <img src={require('../images/decals.jpg')}/>
 
-    <div className="item active">
-      <img src="./images/logo.jpg" alt="Chania" width="460" height="345" />
-      <div className="carousel-caption">
-        <h3>Chania</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+              <h3 className="Decals">Decals</h3>
+            </a>
+
+            <a
+              href="https://stickerapp.com/materials/"
+              className="col-xs-6 col-sm-6 col-md-4">
+              <img src={require('../images/custom.jpg')}/>
+
+              <h3 className="Custom-Design">Custom Design</h3>
+            </a>
+
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div className="item">
-      <img src="./images/logo.jpg" alt="Chania" width="460" height="345" />
-      <div className="carousel-caption">
-        <h3>Chania</h3>
-        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-      </div>
-    </div>
-  
-    <div className="item">
-      <img src="./images/logo.jpg" alt="Flower" width="460" height="345" />
-      <div className="carousel-caption">
-        <h3>Flowers</h3>
-        <p>Beautiful flowers in Kolymbari, Crete.</p>
-      </div>
-    </div>
-
-    <div className="item">
-      <img src="img_flower2.jpg" alt="Flower" width="460" height="345" />
-      <div className="carousel-caption">
-        <h3>Flowers</h3>
-        <p>Beautiful flowers in Kolymbari, Crete.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span className="sr-only">Previous</span>
-  </a>
-  <a className="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span className="sr-only">Next</span>
-  </a>
-</div>
-</div>
-
-);
+    );
+  }
 }
-}
-
 
 export default Home;
