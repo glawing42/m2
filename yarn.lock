@@ -5421,6 +5421,13 @@ react-scripts@1.0.14:
   optionalDependencies:
     fsevents "1.1.2"
 
+react-social-icons@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/react-social-icons/-/react-social-icons-2.7.0.tgz#768db0a3e5d417146aaf6a83c566f743d9b4a269"
+  dependencies:
+    babel-runtime "^6.11.6"
+    classnames "^2.2.5"
+
 "react@^15 || ^16", react@^16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.0.0.tgz#ce7df8f1941b036f02b2cca9dbd0cb1f0e855e2d"
