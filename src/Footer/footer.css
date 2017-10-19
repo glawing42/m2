@@ -1,0 +1,23 @@
+footer {
+    padding: 40px 0 0;
+    background: #222;
+    width: 100%;
+    color: #666;
+    margin-top: 80%;
+}
+
+
+.instagram{
+    color: white;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.social{
+    display: inline-block;
+    padding: 1%;
+}

@@ -23,7 +23,7 @@ class Home extends Component {
   <div className="carousel-inner" role="listbox">
 
     <div className="item active">
-      <img src="img_chania.jpg" alt="Chania" width="460" height="345" />
+      <img src="./images/logo.jpg" alt="Chania" width="460" height="345" />
       <div className="carousel-caption">
         <h3>Chania</h3>
         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -31,7 +31,7 @@ class Home extends Component {
     </div>
 
     <div className="item">
-      <img src="img_chania2.jpg" alt="Chania" width="460" height="345" />
+      <img src="./images/logo.jpg" alt="Chania" width="460" height="345" />
       <div className="carousel-caption">
         <h3>Chania</h3>
         <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -39,7 +39,7 @@ class Home extends Component {
     </div>
   
     <div className="item">
-      <img src="img_flower.jpg" alt="Flower" width="460" height="345" />
+      <img src="./images/logo.jpg" alt="Flower" width="460" height="345" />
       <div className="carousel-caption">
         <h3>Flowers</h3>
         <p>Beautiful flowers in Kolymbari, Crete.</p>
