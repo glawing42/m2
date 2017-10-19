@@ -17,3 +17,21 @@ body {
     display: inline-block;
     padding: 1%;
 }
+
+.visa{
+background: url('../images/visa_curved.png') no-repeat center center;
+width: 100%;
+margin: 5px;
+}
+
+.mastercard{
+    background: url('../images/mastercard_curved.png') no-repeat center center;
+    width: 100%;
+    margin: 5px;
+    }
+
+    .paypal{
+        background: url('../images/paypal_curved.png') no-repeat center center;
+        width: 100%;
+        margin: 5px;
+        }

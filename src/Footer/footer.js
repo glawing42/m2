@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 import "./footer.css";
 
@@ -12,21 +13,30 @@ class Footer extends Component {
 					<div className="container">
 
 						<div className="row">
-							<div className="col-lg-4 col-sm-4 col-xs-5">										
+							<div className="col-lg-3 col-sm-3 col-xs-5">										
 							<a href="/contact">Contact us</a>
 							</div>
 
-							<div className="col-sm-4 col-lg-4 hidden-xs">
+							<div className="col-sm-3 col-lg-3 hidden-xs">
 								
 							<a href="mailto:m2graphicsllc@gmail.com">m2graphicsllc@gmail.com</a>
+							</div>
+
+							<div className="col-sm-3 col-lg-3 hidden-xs">
+								<ul>
+									<li className="visa"></li>
+									<li className="mastercard"></li>
+									<li className="paypal"></li>
+								</ul>	
+							
 							</div>
 							
 
 							<div className="col-lg-3 col-sm-3 col-xs-5">
 								<p>Connect with us! </p>
 							<i className="fa fa-linkedin fa-3x" aria-hidden="true"></i>
-							<a className="social" href="https://www.facebook.com/m2graphicsllc/">Facebook</a>
-							<a className="social" href="https://www.instagram.com/m2_graphics/">Instagram</a>
+							<SocialIcon url="https://www.facebook.com/m2graphicsllc/" />
+							<SocialIcon url="https://www.instagram.com/m2_graphics/" />
 						</div>
 						</div>
 

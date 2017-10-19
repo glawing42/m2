@@ -50,3 +50,8 @@ Inherited from a.col-xs-6.col-sm-6.col-md-3 .products a {
 h3 {
     text-align: center;
 }
+
+#continue-button{
+        margin-left: 40%;
+        margin-top: 20%;
+}
