@@ -2,9 +2,7 @@
   "name": "m2",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    
-  },
+  "devDependencies": {},
   "dependencies": {
     "auth0-js": "^8.10.1",
     "body-parser": "^1.18.2",
